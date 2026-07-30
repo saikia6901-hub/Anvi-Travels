@@ -1,11 +1,790 @@
-<!doctype html><html><head><meta charset='utf-8'><meta name='viewport' content='width=device-width,initial-scale=1'><title>AnVi Travels</title>
-<style>
-*{box-sizing:border-box}body{margin:0;font-family:system-ui;background:#f5f5ef;color:#222}header{position:sticky;top:0;background:#046A38;color:#fff;padding:14px 5%;display:flex;justify-content:space-between;align-items:center}nav a{color:#fff;margin:0 10px;text-decoration:none} .hero{padding:100px 5%;background:linear-gradient(#0007,#0005),url('hero.jpg') center/cover;color:#fff;text-align:center}.btn{background:#d4af37;color:#046A38;padding:12px 22px;border-radius:30px;text-decoration:none;font-weight:700}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;padding:40px 5%}.card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 4px 12px #0002}footer{background:#046A38;color:#fff;padding:30px 5%}
-</style></head><body>
-<header><h2>AnVi Travels</h2><nav><a href=#about>About</a><a href=#fleet>Fleet</a><a href=#contact>Contact</a></nav></header>
-<section class=hero><h1>Safe Journey, Sweet Memories</h1><p>Premium taxi & tour services across Assam and North East India.</p><a class=btn href=#contact>Book Now</a></section>
-<section class=grid><div class=card><h3>Airport Transfer</h3><p>24×7 pickup & drop.</p></div><div class=card><h3>Outstation</h3><p>Comfortable long-distance travel.</p></div><div class=card><h3>Sightseeing</h3><p>Explore North East.</p></div></section>
-<section id=about class=grid><div class=card style='grid-column:1/-1'><h2>About AnVi Travels</h2><p>Reliable, comfortable and affordable travel service.</p></div></section>
-<section id=fleet class=grid><div class=card>Toyota Innova</div><div class=card>Mahindra Bolero</div><div class=card>Maruti Suzuki Dzire</div></section>
-<section id=contact class=grid><div class=card style='grid-column:1/-1'><h2>Contact</h2><p>📞 +91 9678990321<br>✉️ lhazarika21@gmail.com<br>📍 Badhakara, Kuchiamari, North Lakhimpur, Assam - 787032</p><form><input placeholder='Name'><br><input placeholder='Phone'><br><textarea placeholder='Trip details'></textarea><br><button>Send</button></form></div></section>
-<footer>©2026 AnVi Travels</footer></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>AnVi Travels | Premium Taxi & Tour Service</title>
+
+<meta name="description" content="Premium Taxi, Cab & Tour Packages across Assam and North East India.">
+
+<meta name="keywords" content="Taxi, Assam Taxi, Cab Service, North East India, Tour Packages">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+<div class="container">
+
+<div class="logo">
+
+<h2>AnVi <span>Travels</span></h2>
+
+</div>
+
+<nav class="navbar">
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#fleet">Fleet</a></li>
+
+<li><a href="#packages">Packages</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</nav>
+
+<a href="https://wa.me/919678990321" class="book-btn">
+
+Book Now
+
+</a>
+
+</div>
+
+</header>
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+<div class="overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+Discover
+
+<span>North East India</span>
+
+With Comfort
+
+</h1>
+
+<p>
+
+Premium Taxi Service
+
+Reliable • Comfortable • Affordable
+
+</p>
+
+<div class="hero-buttons">
+
+<a href="#booking" class="primary-btn">
+
+Book Your Ride
+
+</a>
+
+<a href="#fleet" class="secondary-btn">
+
+View Fleet
+
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= SERVICES ================= -->
+
+<section class="services">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Our Premium Services
+
+</h2>
+
+<div class="service-grid">
+
+<div class="service-card">
+
+<i class="fa-solid fa-plane"></i>
+
+<h3>Airport Pickup</h3>
+
+<p>
+
+Fast airport pickup & drop service.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-road"></i>
+
+<h3>Outstation Tour</h3>
+
+<p>
+
+Travel anywhere across Assam.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-mountain"></i>
+
+<h3>North East Tour</h3>
+
+<p>
+
+Kaziranga, Shillong, Tawang,
+
+Meghalaya & Arunachal.
+
+</p>
+
+</div>
+
+<div class="service-card">
+
+<i class="fa-solid fa-users"></i>
+
+<h3>Group Booking</h3>
+
+<p>
+
+Family & Corporate Travel.
+
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= FLEET ================= -->
+
+<section class="fleet" id="fleet">
+
+<div class="container">
+
+<h2 class="section-title">
+Our Premium Fleet
+</h2>
+
+<div class="fleet-grid">
+
+<div class="fleet-card">
+
+<img src="images/innova.jpg" alt="Toyota Innova">
+
+<div class="fleet-content">
+
+<h3>Toyota Innova</h3>
+
+<p>✔ 7 Seater</p>
+
+<p>✔ Fully Air Conditioned</p>
+
+<p>✔ Long Distance Comfort</p>
+
+<a href="#booking" class="fleet-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+<div class="fleet-card">
+
+<img src="images/bolero.jpg" alt="Mahindra Bolero">
+
+<div class="fleet-content">
+
+<h3>Mahindra Bolero</h3>
+
+<p>✔ Rural & Hill Roads</p>
+
+<p>✔ Spacious</p>
+
+<p>✔ Budget Friendly</p>
+
+<a href="#booking" class="fleet-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+<div class="fleet-card">
+
+<img src="images/dzire.jpg" alt="Maruti Suzuki Dzire">
+
+<div class="fleet-content">
+
+<h3>Maruti Suzuki Dzire</h3>
+
+<p>✔ Comfortable Sedan</p>
+
+<p>✔ Fuel Efficient</p>
+
+<p>✔ City & Airport Trips</p>
+
+<a href="#booking" class="fleet-btn">
+Book Now
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TOUR PACKAGES ================= -->
+
+<section class="packages" id="packages">
+
+<div class="container">
+
+<h2 class="section-title">
+Popular Tour Packages
+</h2>
+
+<div class="package-grid">
+
+<div class="package-card">
+
+<h3>Kaziranga National Park</h3>
+
+<p>Wildlife Safari • Elephant Safari</p>
+
+</div>
+
+<div class="package-card">
+
+<h3>Shillong</h3>
+
+<p>Scotland of the East</p>
+
+</div>
+
+<div class="package-card">
+
+<h3>Cherrapunji</h3>
+
+<p>Waterfalls • Living Root Bridge</p>
+
+</div>
+
+<div class="package-card">
+
+<h3>Tawang</h3>
+
+<p>Monastery • Snow Mountains</p>
+
+</div>
+
+<div class="package-card">
+
+<h3>Majuli Island</h3>
+
+<p>Largest River Island</p>
+
+</div>
+
+<div class="package-card">
+
+<h3>Ziro Valley</h3>
+
+<p>Nature • Culture • Adventure</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about" id="about">
+
+<div class="container about-grid">
+
+<div class="about-text">
+
+<h2 class="section-title">
+
+About AnVi Travels
+
+</h2>
+
+<p>
+
+AnVi Travels provides premium taxi and tour services across Assam and North East India. Our goal is to offer safe, comfortable, affordable, and reliable travel experiences for families, tourists, business travelers, and groups.
+
+</p>
+
+<ul>
+
+<li>✔ Professional Drivers</li>
+
+<li>✔ Clean & Well Maintained Vehicles</li>
+
+<li>✔ 24×7 Customer Support</li>
+
+<li>✔ Affordable Pricing</li>
+
+<li>✔ Trusted Local Service</li>
+
+</ul>
+
+<a href="#contact" class="primary-btn">
+
+Contact Us
+
+</a>
+
+</div>
+
+<div class="about-image">
+
+<img src="images/about.jpg" alt="About AnVi Travels">
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= WHY CHOOSE US ================= -->
+
+<section class="why-us">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Why Choose Us
+
+</h2>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<i class="fa-solid fa-shield-halved"></i>
+
+<h3>Safe Journey</h3>
+
+<p>Safety is our highest priority.</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-clock"></i>
+
+<h3>24×7 Service</h3>
+
+<p>Available anytime for bookings.</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<h3>Affordable Price</h3>
+
+<p>Premium quality at fair prices.</p>
+
+</div>
+
+<div class="why-card">
+
+<i class="fa-solid fa-star"></i>
+
+<h3>Trusted Service</h3>
+
+<p>Preferred by hundreds of travelers.</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= STATISTICS ================= -->
+
+<section class="stats">
+
+<div class="container">
+
+<div class="stat-box">
+
+<h2>500+</h2>
+
+<p>Happy Customers</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>1000+</h2>
+
+<p>Trips Completed</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>15+</h2>
+
+<p>Tour Destinations</p>
+
+</div>
+
+<div class="stat-box">
+
+<h2>24×7</h2>
+
+<p>Support</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= TESTIMONIALS ================= -->
+
+<section class="testimonials">
+
+<div class="container">
+
+<h2 class="section-title">
+
+What Our Customers Say
+
+</h2>
+
+<div class="testimonial-grid">
+
+<div class="testimonial-card">
+
+<p>
+
+★★★★★
+
+Excellent service and very professional driver.
+
+</p>
+
+<h4>Rahul Sharma</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+
+★★★★★
+
+Comfortable ride and affordable price.
+
+</p>
+
+<h4>Priya Das</h4>
+
+</div>
+
+<div class="testimonial-card">
+
+<p>
+
+★★★★★
+
+Highly recommended for North East tours.
+
+</p>
+
+<h4>Amit Gogoi</h4>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ================= BOOKING ================= -->
+
+<section class="booking" id="booking">
+
+<div class="container">
+
+<h2 class="section-title">
+
+Book Your Ride
+
+</h2>
+
+<form class="booking-form">
+
+<input type="text" placeholder="Full Name" required>
+
+<input type="tel" placeholder="Phone Number" required>
+
+<input type="email" placeholder="Email Address">
+
+<select required>
+
+<option value="">Select Vehicle</option>
+
+<option>Toyota Innova</option>
+
+<option>Mahindra Bolero</option>
+
+<option>Maruti Suzuki Dzire</option>
+
+</select>
+
+<input type="date" required>
+
+<input type="text" placeholder="Pickup Location">
+
+<input type="text" placeholder="Drop Location">
+
+<textarea rows="5" placeholder="Additional Message"></textarea>
+
+<button type="submit" class="primary-btn">
+
+Book Now
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact" id="contact">
+
+<div class="container contact-grid">
+
+<div>
+
+<h2 class="section-title">
+
+Contact Information
+
+</h2>
+
+<p>
+
+<strong>Phone:</strong><br>
+
++91 9678990321
+
+</p>
+
+<p>
+
+<strong>Email:</strong><br>
+
+lhazarika21@gmail.com
+
+</p>
+
+<p>
+
+<strong>Address:</strong><br>
+
+Badhakara, Kuchiamari,<br>
+
+North Lakhimpur,<br>
+
+Assam – 787032
+
+</p>
+
+</div>
+
+<div>
+
+<iframe
+
+src="https://www.google.com/maps?q=North+Lakhimpur+Assam&output=embed"
+
+width="100%"
+
+height="350"
+
+style="border:0;border-radius:15px;"
+
+loading="lazy">
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+<div class="container footer-grid">
+
+<div>
+
+<h2>AnVi Travels</h2>
+
+<p>
+
+Safe Journey, Sweet Memories
+
+</p>
+
+</div>
+
+<div>
+
+<h3>Quick Links</h3>
+
+<ul>
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li><a href="#fleet">Fleet</a></li>
+
+<li><a href="#packages">Packages</a></li>
+
+<li><a href="#contact">Contact</a></li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Services</h3>
+
+<ul>
+
+<li>Airport Pickup</li>
+
+<li>Tour Packages</li>
+
+<li>Corporate Travel</li>
+
+<li>Outstation Trips</li>
+
+<li>Hotel Transfer</li>
+
+</ul>
+
+</div>
+
+<div>
+
+<h3>Follow Us</h3>
+
+<div class="social-icons">
+
+<a href="#"><i class="fab fa-facebook"></i></a>
+
+<a href="#"><i class="fab fa-instagram"></i></a>
+
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+
+<a href="#"><i class="fab fa-youtube"></i></a>
+
+</div>
+
+</div>
+
+</div>
+
+<hr>
+
+<p class="copyright">
+
+© 2026 AnVi Travels. All Rights Reserved.
+
+</p>
+
+</footer>
+
+<!-- WhatsApp Floating Button -->
+
+<a href="https://wa.me/919678990321"
+
+class="whatsapp-float"
+
+target="_blank">
+
+<i class="fab fa-whatsapp"></i>
+
+</a>
+
+<!-- Back To Top -->
+
+<button id="topBtn">
+
+<i class="fas fa-arrow-up"></i>
+
+</button>
+
+<!-- Script -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
