@@ -1,0 +1,903 @@
+/* ==========================================
+   ANVI TRAVELS PREMIUM CSS
+========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap');
+
+:root{
+
+--primary:#046A38;
+--secondary:#D4AF37;
+--white:#ffffff;
+--light:#F8F8F5;
+--dark:#222;
+--gray:#666;
+--shadow:0 10px 30px rgba(0,0,0,.15);
+
+}
+
+*{
+
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+background:var(--light);
+color:var(--dark);
+line-height:1.7;
+
+}
+
+img{
+
+max-width:100%;
+display:block;
+
+}
+
+a{
+
+text-decoration:none;
+
+}
+
+.container{
+
+width:90%;
+max-width:1200px;
+margin:auto;
+
+}
+
+.section-title{
+
+font-family:'Playfair Display',serif;
+font-size:40px;
+text-align:center;
+margin-bottom:50px;
+color:var(--primary);
+
+}
+
+/* HEADER */
+
+.header{
+
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:999;
+background:rgba(4,106,56,.95);
+backdrop-filter:blur(12px);
+
+}
+
+.header .container{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 0;
+
+}
+
+.logo h2{
+
+color:#fff;
+font-size:30px;
+
+}
+
+.logo span{
+
+color:var(--secondary);
+
+}
+
+.navbar ul{
+
+display:flex;
+gap:30px;
+list-style:none;
+
+}
+
+.navbar a{
+
+color:#fff;
+font-weight:500;
+transition:.3s;
+
+}
+
+.navbar a:hover{
+
+color:var(--secondary);
+
+}
+
+.book-btn{
+
+background:var(--secondary);
+color:var(--primary);
+padding:12px 25px;
+border-radius:50px;
+font-weight:700;
+transition:.3s;
+
+}
+
+.book-btn:hover{
+
+transform:translateY(-3px);
+
+}
+
+/* HERO */
+
+.hero{
+
+height:100vh;
+
+background:
+
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+
+url("images/hero.jpg") center/cover;
+
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:#fff;
+position:relative;
+
+}
+
+.hero-content{
+
+max-width:750px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+font-family:'Playfair Display',serif;
+margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+color:var(--secondary);
+
+}
+
+.hero p{
+
+font-size:22px;
+margin-bottom:35px;
+
+}
+
+.hero-buttons{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+
+}
+
+.primary-btn{
+
+background:var(--secondary);
+padding:14px 35px;
+border-radius:40px;
+color:var(--primary);
+font-weight:700;
+
+}
+
+.secondary-btn{
+
+border:2px solid #fff;
+padding:14px 35px;
+border-radius:40px;
+color:#fff;
+
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+
+transform:translateY(-5px);
+transition:.3s;
+
+}
+/* ==========================
+   SERVICES
+========================== */
+
+.services{
+
+padding:100px 0;
+background:#fff;
+
+}
+
+.service-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
+
+}
+
+.service-card{
+
+background:#fff;
+padding:40px 30px;
+border-radius:18px;
+text-align:center;
+box-shadow:var(--shadow);
+transition:.35s;
+
+}
+
+.service-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.service-card i{
+
+font-size:55px;
+color:var(--secondary);
+margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+/* ==========================
+   FLEET
+========================== */
+
+.fleet{
+
+padding:100px 0;
+background:var(--light);
+
+}
+
+.fleet-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+gap:35px;
+
+}
+
+.fleet-card{
+
+background:#fff;
+border-radius:20px;
+overflow:hidden;
+box-shadow:var(--shadow);
+transition:.35s;
+
+}
+
+.fleet-card:hover{
+
+transform:translateY(-12px);
+
+}
+
+.fleet-card img{
+
+width:100%;
+height:230px;
+object-fit:cover;
+
+}
+
+.fleet-content{
+
+padding:25px;
+
+}
+
+.fleet-content h3{
+
+color:var(--primary);
+margin-bottom:15px;
+
+}
+
+.fleet-content p{
+
+margin-bottom:10px;
+color:var(--gray);
+
+}
+
+.fleet-btn{
+
+display:inline-block;
+margin-top:20px;
+padding:12px 28px;
+border-radius:40px;
+background:var(--secondary);
+color:var(--primary);
+font-weight:700;
+
+}
+
+/* ==========================
+   PACKAGES
+========================== */
+
+.packages{
+
+padding:100px 0;
+background:#fff;
+
+}
+
+.package-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+
+}
+
+.package-card{
+
+padding:35px;
+border-radius:18px;
+background:linear-gradient(135deg,#046A38,#0b8b50);
+color:#fff;
+box-shadow:var(--shadow);
+transition:.35s;
+
+}
+
+.package-card:hover{
+
+transform:scale(1.04);
+
+}
+
+.package-card h3{
+
+margin-bottom:15px;
+color:#FFD86B;
+
+}
+
+/* ==========================
+   ABOUT
+========================== */
+
+.about{
+
+padding:100px 0;
+
+}
+
+.about-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.about-text p{
+
+margin:25px 0;
+
+}
+
+.about-text ul{
+
+list-style:none;
+
+}
+
+.about-text li{
+
+margin-bottom:15px;
+
+}
+
+.about-image img{
+
+border-radius:25px;
+box-shadow:var(--shadow);
+
+}
+
+/* ==========================
+   WHY CHOOSE US
+========================== */
+
+.why-us{
+
+padding:100px 0;
+background:#fff;
+
+}
+
+.why-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+gap:30px;
+
+}
+
+.why-card{
+
+text-align:center;
+padding:35px;
+border-radius:18px;
+background:#fff;
+box-shadow:var(--shadow);
+
+}
+
+.why-card i{
+
+font-size:55px;
+color:var(--secondary);
+margin-bottom:20px;
+
+}
+
+.why-card h3{
+
+margin-bottom:15px;
+color:var(--primary);
+
+}
+
+/* ==========================
+   STATS
+========================== */
+
+.stats{
+
+padding:90px 0;
+background:linear-gradient(135deg,#046A38,#0A8A51);
+color:#fff;
+
+}
+
+.stats .container{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:30px;
+text-align:center;
+
+}
+
+.stat-box h2{
+
+font-size:52px;
+color:#FFD86B;
+
+}
+
+.stat-box p{
+
+margin-top:10px;
+
+}
+
+/* ==========================
+   TESTIMONIALS
+========================== */
+
+.testimonials{
+
+padding:100px 0;
+background:var(--light);
+
+}
+
+.testimonial-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:30px;
+
+}
+
+.testimonial-card{
+
+background:#fff;
+padding:35px;
+border-radius:18px;
+box-shadow:var(--shadow);
+
+}
+
+.testimonial-card h4{
+
+margin-top:20px;
+color:var(--primary);
+
+}
+/* ==========================
+   BOOKING
+========================== */
+
+.booking{
+padding:100px 0;
+background:#fff;
+}
+
+.booking-form{
+max-width:850px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:20px;
+}
+
+.booking-form input,
+.booking-form select,
+.booking-form textarea{
+
+width:100%;
+padding:16px;
+border:1px solid #ddd;
+border-radius:12px;
+font-size:16px;
+font-family:Poppins,sans-serif;
+outline:none;
+transition:.3s;
+
+}
+
+.booking-form input:focus,
+.booking-form select:focus,
+.booking-form textarea:focus{
+
+border-color:var(--primary);
+box-shadow:0 0 10px rgba(4,106,56,.2);
+
+}
+
+.booking-form textarea{
+
+grid-column:1/-1;
+resize:vertical;
+
+}
+
+.booking-form button{
+
+grid-column:1/-1;
+border:none;
+cursor:pointer;
+
+}
+
+/* ==========================
+   CONTACT
+========================== */
+
+.contact{
+
+padding:100px 0;
+background:var(--light);
+
+}
+
+.contact-grid{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:50px;
+align-items:center;
+
+}
+
+.contact p{
+
+margin-bottom:20px;
+font-size:17px;
+
+}
+
+.contact iframe{
+
+border-radius:20px;
+box-shadow:var(--shadow);
+
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+footer{
+
+background:#033E22;
+color:#fff;
+padding:70px 0 20px;
+
+}
+
+.footer-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:40px;
+
+}
+
+.footer-grid h2,
+.footer-grid h3{
+
+color:var(--secondary);
+margin-bottom:20px;
+
+}
+
+.footer-grid ul{
+
+list-style:none;
+
+}
+
+.footer-grid li{
+
+margin-bottom:12px;
+
+}
+
+.footer-grid a{
+
+color:#fff;
+transition:.3s;
+
+}
+
+.footer-grid a:hover{
+
+color:var(--secondary);
+
+}
+
+footer hr{
+
+margin:40px 0;
+border:none;
+height:1px;
+background:rgba(255,255,255,.2);
+
+}
+
+.copyright{
+
+text-align:center;
+font-size:15px;
+
+}
+
+/* ==========================
+   SOCIAL
+========================== */
+
+.social-icons{
+
+display:flex;
+gap:15px;
+
+}
+
+.social-icons a{
+
+width:45px;
+height:45px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+background:rgba(255,255,255,.1);
+font-size:20px;
+color:#fff;
+transition:.3s;
+
+}
+
+.social-icons a:hover{
+
+background:var(--secondary);
+color:var(--primary);
+transform:translateY(-5px);
+
+}
+
+/* ==========================
+   WHATSAPP BUTTON
+========================== */
+
+.whatsapp-float{
+
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:#25D366;
+color:#fff;
+display:flex;
+justify-content:center;
+align-items:center;
+border-radius:50%;
+font-size:30px;
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+z-index:999;
+
+}
+
+/* ==========================
+   TOP BUTTON
+========================== */
+
+#topBtn{
+
+position:fixed;
+bottom:100px;
+right:25px;
+width:50px;
+height:50px;
+border:none;
+border-radius:50%;
+background:var(--secondary);
+color:var(--primary);
+font-size:18px;
+cursor:pointer;
+display:none;
+box-shadow:var(--shadow);
+
+}
+
+/* ==========================
+   ANIMATIONS
+========================== */
+
+.service-card,
+.fleet-card,
+.package-card,
+.why-card,
+.testimonial-card{
+
+transition:all .35s ease;
+
+}
+
+.service-card:hover,
+.fleet-card:hover,
+.package-card:hover,
+.why-card:hover,
+.testimonial-card:hover{
+
+transform:translateY(-10px);
+
+}
+
+/* ==========================
+   MOBILE RESPONSIVE
+========================== */
+
+@media(max-width:992px){
+
+.hero h1{
+font-size:48px;
+}
+
+.about-grid,
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.booking-form{
+
+grid-template-columns:1fr;
+
+}
+
+.navbar ul{
+
+gap:15px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.header .container{
+
+flex-direction:column;
+gap:15px;
+
+}
+
+.navbar ul{
+
+flex-wrap:wrap;
+justify-content:center;
+
+}
+
+.hero{
+
+padding:120px 20px;
+
+}
+
+.hero h1{
+
+font-size:36px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.section-title{
+
+font-size:32px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.hero h1{
+
+font-size:30px;
+
+}
+
+.book-btn,
+.primary-btn,
+.secondary-btn{
+
+width:100%;
+text-align:center;
+
+}
+
+}
